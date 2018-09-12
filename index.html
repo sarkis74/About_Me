@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lab 2 About Me Game</title>
+    <style type="text/css">
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        background-color:whitesmoke;}
+
+    h1 {
+        font-size:xx-large;
+    }
+    }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1><b>Guess about me: Sarkis.</b></h1>
+    <ul>
+        <hr />
+        <li>Can Sarkis drive a stick shift?</li>
+        <hr />
+        <li>Does Sarkis like beets?</li>
+        <hr />
+        <li>Did Sarkis attend college?</li>
+        <hr />
+        <li>Did Sarkis play soccer in high school?</li>
+        <hr />
+        <li>Can Sarkis play the guitar?</li>
+        <hr />
+    </ul>
+    <script>
+        var userName = prompt('Welcome player! What is your name?');
+        console.log('What is your name?: ' + userName);
+
+        var driveCar = prompt('Can Sarkis drive stick shift?');
+        console.log(driveCar.toLowerCase());
+        console.log('Does Sarkis drive stick shift?: ' + driveCar);
+
+        if(driveCar === 'yes'){alert('Great guess! I do indeed drive a stick shift.');
+        if(driveCar === '')prompt('Please answer yes or no');
+        }else {
+            alert('No, I don\'t like standard.');
+        }
+
+
+
+        var beets = prompt('Does Sarkis like beets?');
+        console.log(beets.toLowerCase());
+        console.log('Does Sarkis like beets?: ' + beets);
+        
+        if(beets === 'yes'){alert('Nooooo, I hate them, they\'re gross');
+        if(beets === '')prompt('Please answer yes or no');
+        }else {
+        alert('Exactly! I don\'t');
+        }
+
+        var college = prompt('Did Sarkis attend college?');
+        console.log(college.toLowerCase());
+        console.log('Did Sarkis attend college: ' + college);
+
+        if(college === 'yes'){alert('Yes I did: University of Washington. Great school!');
+        if(college === '')prompt('Please answer yes or no');
+        }else {
+        alert('No, I did attend');
+        }
+
+        var soccer = prompt('Did Sarkis play soccer in high school?');
+        console.log(soccer.toLowerCase());
+        console.log('Did Sarkis play soccer in high school?: ' + soccer);
+
+        if(soccer === 'yes'){alert('Yes of course I did. Love soccer!');
+        if(soccer === '')prompt('Please answer yes or no');
+        }else {
+        alert('No! I did play in high school.');
+        }
+
+        var guitar = prompt('Does Sarkis play the guitar?');
+        console.log(guitar.toLowerCase());
+        console.log('Does Sarkis play the guitar?: ' + guitar);
+
+        if(guitar === 'yes'){alert('Ha! I wish.');
+        if(guitar === '')prompt('Please answer yes or no');
+        }else {
+        alert('Sadly you\'re right');
+        }
+
+    </script>
+    
+</body>
+</html>
