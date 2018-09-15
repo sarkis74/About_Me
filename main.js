@@ -73,7 +73,7 @@
 
         while(turns < 5) { //loop for turns guessing game question 6
         var soccerGoals = prompt('How many goals did I score in high school?');
-            if(soccerGoals = 3) {
+            if(soccerGoals === 3) {
             alert('You are correct!');
             points = points + 4;
             break;
@@ -87,25 +87,30 @@
             points = points + (4 -turns);
             }
 
-        var turns = 0;
         var musicBands = ['NIN', 'Tool', 'Blur',
         'Depeche Mode', 'Wu Tang Clan'];
         var band;
+        var rightGuess = false;
+        var guessCounter = 6;
 
-        while (turns < 7) { //loop for turns guessing game question 7
-
-        band = prompt('Name one of my favorite bands');
-            for (i = 0; i < musicBands.length; i++) { //array loop
-                if (band === musicBands[i]) {
-                alert('Great guess! You are right');
-                alert('These are all the bands ' + musicBands.join(", "));//shows array elements in one string
-                turns = 6;
-            break;
+        do{
+        var bandAnswer = prompt('What is my favorite band?');
+            for(var i = 0; i < musicBands.length; i++){
+                if(bandAnswer[i] === musicBands){
+                rightGuess = true;
+             break;
             }
         }
-        alert('Please try again');
-        turns++;
-        points = points + (6 - turns);
-        }
+            if(rightGuess){
+            alert(musicBands[i]);
+            alert('Good guesses, they are NIN, Tool, Blur,Depeche Mode, Wu Tang Clan');
+            righttGuess++;
+        } else {
 
-        alert('You scored ' + points);
+        alert('nice try, guess again');
+        }
+         guessCounter--;
+        } while(guessCounter > 0 && !rightGuess);
+            if(!rightGuess){
+            alert('Good job, they are NIN, Tool, Blur, Depeche Mode, and Wu Tang Clan');
+        }
