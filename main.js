@@ -82,7 +82,7 @@
 
         var turns = 0;
 
-        while(turns < 5) { //loop for guessing game question 6
+        while(turns < 5) { //loop for turns guessing game question 6
         var soccerGoals = prompt('How many goals did I score in high school?');
             if(soccerGoals = 3) {
             alert('You are correct!');
@@ -108,7 +108,7 @@
         'Depeche Mode', 'Wu Tang Clan'];
         var band;
 
-        while (turns < 7) { //loop for guessing game question 7
+        while (turns < 7) { //loop for turns guessing game question 7
 
         band = prompt('Name one of my favorite bands');
             for (i = 0; i < musicBands.length; i++) { //array loop
