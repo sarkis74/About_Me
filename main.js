@@ -73,7 +73,7 @@
 
         while(turns < 5) { //loop for turns guessing game question 6
         var soccerGoals = prompt('How many goals did I score in high school?');
-            if(soccerGoals === 3) {
+            if(soccerGoals = 3) {
             alert('You are correct!');
             points = points + 4;
             break;
@@ -105,7 +105,7 @@
             if(rightGuess){
             alert(musicBands[i]);
             alert('Good guesses, they are NIN, Tool, Blur,Depeche Mode, Wu Tang Clan');
-            righttGuess++;
+            rightGuess++;
         } else {
 
         alert('nice try, guess again');
