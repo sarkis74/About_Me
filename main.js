@@ -10,28 +10,23 @@
             if(driveCarLow === 'yes'){
             alert('Great guess! I can indeed drive a manual car.');
             points++;
-        }
-            else if(driveCarLow === 'no'){
+            }else if(driveCarLow === 'no'){
             alert('No, I\'m indeed a very skilled driver.');
-        }
-            else {
+            }else {
             prompt('Please answer yes or no');
-        }
-        console.log('Player response is: ' + driveCarLow);
+            }console.log('Player response is: ' + driveCarLow);
 
         var beets = prompt('Does Sarkis like beets?');
         var beetsLow = beets.toLowerCase();
         
             if(beetsLow === 'yes'){
             alert('No way, I hate them, they\'re gross');
-        }
-            else if(beetsLow === 'no'){
+            }else if(beetsLow === 'no'){
             alert('Exactly! I don\'t like them at all.');
             points++;
-        }
-            else {
+            }else {
             prompt('Please answer yes or no');
-        }
+            }
         console.log('Does Sarkis like beets?: ' + beetsLow);
 
         var college = prompt('Did Sarkis attend college?');
@@ -40,13 +35,11 @@
             if(collegeLow === 'yes'){
             alert('Yes I did: University of Washington. Good times!');
             points++;
-        }
-            else if(collegeLow === 'no'){
+            }else if(collegeLow === 'no'){
             alert('No, I did attend. It was fun.') 
-        }
-            else {
+            }else {
             prompt('Please answer yes or no');
-        }
+            }
         console.log('Did Sarkis attend college: ' + collegeLow);
 
         var soccer = prompt('Did Sarkis play soccer in high school?');
@@ -55,13 +48,11 @@
             if(soccerUp === 'yes'){
             alert('Yes of course I did. I love soccer! Who doesn\'t');
             points++;
-        }
-            else if(soccerLow === 'no'){
+            }else if(soccerLow === 'no'){
             alert('No! I did play in high school');
-        }
-            else {
+            }else {
             prompt('Please answer yes or no');
-        }
+            }
         console.log('Answer to if Sarkis played soccer in high school is: ' + soccerLow);
 
         var guitar = prompt('Does Sarkis play the guitar?');
@@ -69,14 +60,12 @@
 
             if(guitarLow === 'yes'){
             alert('Ha! I wish.That is one skill I would like to have someday');
-        }
-            else if(guitarLow === 'no'){
+            }else if(guitarLow === 'no'){
             alert('Sadly you\'re right');
             points++;
-        }
-            else {
+            }else {
             prompt('Please answer yes or no');
-        }
+            }
         console.log('Does Sarkis play the guitar?: ' + guitarLow);
 
 
@@ -88,20 +77,15 @@
             alert('You are correct!');
             points = points + 4;
             break;
-        }
-
-            else if(soccerGoals < 3) {
+            }else if(soccerGoals < 3) {
             prompt('Too low, try again');
             turns++;
             points = points + (4 -turns);
-        }
-
-            else(soccerGoals > 3) ;
+            }else(soccerGoals > 3) ;
             prompt('Too high, try again');
             turns++;
             points = points + (4 -turns);
-
-        }
+            }
 
         var turns = 0;
         var musicBands = ['NIN', 'Tool', 'Blur',
