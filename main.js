@@ -103,6 +103,7 @@
             break;
             }
         }
+        alert('Please try again');
         turns++;
         points = point + (6 - turns);
         }
