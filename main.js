@@ -62,7 +62,7 @@
             else {
             prompt('Please answer yes or no');
         }
-        console.log('Player answer to if Sarkis played soccer in high school is: ' + soccerLow);
+        console.log('Answer to if Sarkis played soccer in high school is: ' + soccerLow);
 
         var guitar = prompt('Does Sarkis play the guitar?');
         var guitarLow = guitar.toLowerCase();
