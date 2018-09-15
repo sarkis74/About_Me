@@ -1,6 +1,6 @@
 'use strict';
         
-        var points = 0;
+        var points = 0;//score tracker
         var userName = prompt('Welcome player! What is your name?');
         console.log('Player username is: ' + userName);
 
@@ -82,7 +82,7 @@
 
         var turns = 0;
 
-        while(turns < 5) {
+        while(turns < 5) { //loop for guessing game question 6
         var soccerGoals = prompt('How many goals did I score in high school?');
             if(soccerGoals = 3) {
             alert('You are correct!');
@@ -105,21 +105,22 @@
 
         var turns = 0;
         var musicBands = ['NIN', 'Tool', 'Blur',
-        'Depeche Mode'];
+        'Depeche Mode', 'Wu Tang Clan'];
         var band;
 
-        while (turns < 7) { //loop for guessing game 
+        while (turns < 7) { //loop for guessing game question 7
 
         band = prompt('Name one of my favorite bands');
             for (i = 0; i < musicBands.length; i++) { //array loop
                 if (band === musicBands[i]) {
                 alert('Great guess! You are right');
-                alert('These are all the bands ' + musicBands.join(", "));
+                alert('These are all the bands ' + musicBands.join(", "));//shows array elements in one string
                 turns = 7;
             break;
             }
         }
         turns++;
+        points = point + (6 - turns);
         }
 
         alert('You scored ' + points);
