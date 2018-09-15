@@ -128,6 +128,7 @@ do{
     if(musicBands[i] === bandAnswer){
       rightGuess = true;
       alert('Good job!');
+      points++;
       break;
     }
   }
@@ -143,3 +144,5 @@ if(!rightGuess){
   alert('Better luck next time, they are NIN, Tool, Blur, Depeche Mode, and Wu Tang Clan');
 }
 console.log('Number of guesses: ' + guessCounter);
+
+alert('Nice guessing! You got ' + points + ' out of 7 correct!');
