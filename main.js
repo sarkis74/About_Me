@@ -90,16 +90,16 @@
 
         var musicBands = ['NIN', 'Tool', 'Blur',
         'Depeche Mode', 'Wu Tang Clan'];
-        var band;
         var rightGuess = false;
         var guessCounter = 6;
 
         do{
         var bandAnswer = prompt('What is my favorite band?');
             for(var i = 0; i < musicBands.length; i++){
-                if(bandAnswer[i] === musicBands){
+                if(musicBands[i] === bandAnswer){
                 rightGuess = true;
-             break;
+                alert('Good job!');
+                break;
             }
         }
             if(rightGuess){
