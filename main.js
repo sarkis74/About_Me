@@ -99,7 +99,7 @@
                 if (band === musicBands[i]) {
                 alert('Great guess! You are right');
                 alert('These are all the bands ' + musicBands.join(", "));//shows array elements in one string
-                turns = 7;
+                turns = 6;
             break;
             }
         }
