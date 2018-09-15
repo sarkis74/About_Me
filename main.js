@@ -45,7 +45,7 @@
         var soccer = prompt('Did Sarkis play soccer in high school?');
         var soccerLow = soccer.toLowerCase();
         
-            if(soccerUp === 'yes'){
+            if(soccerLow === 'yes'){
             alert('Yes of course I did. I love soccer! Who doesn\'t');
             points++;
             }else if(soccerLow === 'no'){
@@ -86,6 +86,7 @@
             turns++;
             points = points + (4 -turns);
             }
+        console.log('Player guesses: ' + soccerGoals);
 
         var musicBands = ['NIN', 'Tool', 'Blur',
         'Depeche Mode', 'Wu Tang Clan'];
@@ -114,3 +115,4 @@
             if(!rightGuess){
             alert('Good job, they are NIN, Tool, Blur, Depeche Mode, and Wu Tang Clan');
         }
+        console.log('Number of guesses: ' + guessCounter);
