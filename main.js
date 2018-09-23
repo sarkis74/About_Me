@@ -81,11 +81,11 @@ if(collegeLow === 'yes'){
 }
 
 soccer();
-if(soccerLow === 'yes'){
+if(soccerLow = 'yes'){
   alert('Yes of course I did. I love soccer! Who doesn\'t');
   points++;
-}else if(soccerLow === 'no'){
-  alert('No! I did play in high school');
+}else if(soccerLow = 'no'){
+    alert('No! I did play in high school');
 }else {
   prompt('Please answer yes or no');
 }
